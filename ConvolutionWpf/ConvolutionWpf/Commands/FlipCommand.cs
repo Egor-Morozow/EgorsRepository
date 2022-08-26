@@ -22,7 +22,7 @@ namespace ConvolutionWpf.Commands
             var image = _imageFactory();
             if (image == null)
                 return;
-
+            
             
 
             var pixels = new byte[image.PixelHeight * image.BackBufferStride];
