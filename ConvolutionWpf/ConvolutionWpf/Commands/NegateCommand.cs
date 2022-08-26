@@ -30,9 +30,6 @@ namespace ConvolutionWpf.Commands
                 for (int j = 0; j < image.PixelHeight; ++j)
                 {
                     int index = j * image.BackBufferStride + 4 * i;
-                    double red = pixels[index];
-                    double green = pixels[index + 1];
-                    double blue = pixels[index + 2];
 
                     for (int c = 0; c < 3; ++c)
                     {
