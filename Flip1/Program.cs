@@ -5,7 +5,7 @@ SummingTask3();
 SummingTask4(2);
 SummingTask5(3);
 SummingTask6(2);
-SummingTask7(2);
+SummingTask7(3);
 
 static void SummingTask1()
 {
@@ -103,7 +103,7 @@ static void SummingTask6(int width)
 
 static void SummingTask7(int blockSize)
 {
-    int[] Array = { 1, 2, 3, 4};
+    int[] Array = { 1, 2, 3, 4, 5, 6};
     int length = Array.Length - 1;
     for (int i = 0; i <= length; i++)
     {
