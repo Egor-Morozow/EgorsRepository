@@ -1,122 +1,127 @@
 ﻿using System.ComponentModel.DataAnnotations;
-SummingTask1();
-SummingTask2();
-SummingTask3();
-SummingTask4(2);
-SummingTask5(3);
+using System.Globalization;
+
+SummingTask1(new int[] { 1, 5, 3, 8});
+SummingTask2(new int[] { 1, 5, 3, 8});
+SummingTask3(new int[] { 1, 2, 3, 4, 5, 6});
+SummingTask4(3, new int[] { 1, 5, 3, 8, 6, 2 });
+/*SummingTask5(3);
 SummingTask6(2);
-SummingTask7(3);
+SummingTask7(3);*/
 
-static void SummingTask1()
+static void PrintArray(int [] input)
 {
-    int[] Array = { 1, 5, 3, 8, 9, 56, 454 };
-    for (int i = Array.Length - 1; i >= 0; i--)
+    for (int i = 0; i < input.Length; i++)
     {
-        Console.Write(Array[i] + " ");
+     Console.Write(input[i] + " ");
     }
-    Console.WriteLine("");
 }
 
-static void SummingTask2()
+static int[] SummingTask1(int[] input)
 {
-    int[] Array = { 1, 5, 3, 8, };
-    for (int i = 0; i < Array.Length; i++)
+    for (int i = input.Length - 1; i >= 0; i--)
     {
-        Console.Write(Array[i] + " ");
+        Console.Write(input[i] + " ");
+        
     }
-    int length = Array.Length - 1;
-    int[] SecondArray = new int [length * 2];
-    for (int j = 0; j <= length; j++)
-    {
-        SecondArray[j] = Array[j];
-        Console.Write(SecondArray[j] + " ");
-    }
-    Console.WriteLine("");
+    Console.WriteLine();
+    return input;
 }
 
-static void SummingTask3()
+static int[] SummingTask2(int [] input)
 {
-    int[] Array = { 1, 5, 3, 8, 15, 232, 544, 55 };
-    for (int i = 0; i < Array.Length; i++)
+    PrintArray(input);
+    int[] result = new int[input.Length];
+    for (int i = 0; i < result.Length; i++)
     {
-        Console.Write(Array[i] + " ");
+        result[i] = input[i];
     }
-    int length = Array.Length - 1;
-    int[] SecondArray = new int[length * 2];
-    for (int j = length; j >= 0; j--)
-    {
-        SecondArray[j] = Array[j];
-        Console.Write(SecondArray[j] + " ");
-    }
-    Console.WriteLine("");
+    PrintArray(result);
+    Console.WriteLine();
+    return result;
 }
 
-static void SummingTask4(int blockSize)
+static int[] SummingTask3(int[] input)
 {
-    int[] Array = { 1, 2, 3, 4};
-    for (int i = blockSize; i < Array.Length; i++)
+    PrintArray(input);
+    int[] result = new int[input.Length * 2];
+    for (int j = input.Length - 1; j >= 0; j--)
     {
-        Console.Write(Array[i] + " ");
+        result[j] = input[j];
+        Console.Write(result[j] + " ");
+    }
+    Console.WriteLine();
+    return result;
+}
+
+static int[] SummingTask4(int blockSize, int[] input)
+{
+    int[] result = new int[input.Length];
+    for (int i = blockSize; i < input.Length; i++)
+    {
+        result[i] = input[i];
+        Console.Write(result[i] + " ");
     }
     for (int j = 0; j < blockSize; j++)
     {
-        Console.Write(Array[j] + " ");
+        result[j] = input[j];
+        Console.Write(result[j] + " ");
     }
-    Console.WriteLine("");
+    return result;
 }
 
 static void SummingTask5(int width)
 {
-    int[] Array = { 1, 5, 3, 8, 7, 4 };
+    int[] array = { 1, 5, 3, 8, 7, 4 };
     for (int i = width - 1; i >= 0; i--)
     {
-        Console.Write(Array[i] + " ");
+        Console.Write(array[i] + " ");
     }
-    for (int j = Array.Length - 1; j >= width ; j--)
+    for (int j = array.Length - 1; j >= width ; j--)
     {
-        Console.Write(Array[j] + " ");
+        Console.Write(array[j] + " ");
     }
     Console.WriteLine("");
 }
 
 static void SummingTask6(int width)
 {
-    int [] Array = { 1, 2, 3, 4};
-    int length = Array.Length - 1;
-    int [] SecondArray = new int[length * 2];
+    int [] array = { 1, 2, 3, 4};
+    int length = array.Length - 1;
+    int [] secondArray = new int[length * 2];
     for (int i = 0; i <= length; i++)
     {
-        Console.Write(Array[i] + " ");
+        Console.Write(array[i] + " ");
     }
     for (int j = width - 1; j >= 0; j--)
     {
-        SecondArray[j] = Array[j];
-        Console.Write(SecondArray[j] + " ");
+        secondArray[j] = array[j];
+        Console.Write(secondArray[j] + " ");
     }
-    for (int k = Array.Length - 1; k >= width; k--)
+    for (int k = array.Length - 1; k >= width; k--)
     {
-        SecondArray[k] = Array[k];
-        Console.Write(SecondArray[k] + " ");
+        secondArray[k] = array[k];
+        Console.Write(secondArray[k] + " ");
     }
     Console.WriteLine("");
 }
 
 static void SummingTask7(int blockSize)
 {
-    int[] Array = { 1, 2, 3, 4, 5, 6};
-    int length = Array.Length - 1;
+    int[] array = { 1, 2, 3, 4, 5, 6};
+    int length = array.Length - 1;
     for (int i = 0; i <= length; i++)
     {
-        Console.Write(Array[i] + " ");
+        Console.Write(array[i] + " ");
     }
-    int[] SecondArray = new int [length * 2];
-    for (int i = blockSize; i < Array.Length; i++)
+    int[] secondArray = new int [length * 2];
+    for (int i = blockSize; i < array.Length; i++)
     {
-        Console.Write(Array[i] + " ");
+        Console.Write(array[i] + " ");
     }
     for (int j = 0; j < blockSize; j++)
     {
-        Console.Write(Array[j] + " ");
+        Console.Write(array[j] + " ");
     }
     Console.WriteLine("");
 }
