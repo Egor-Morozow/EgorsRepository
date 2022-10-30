@@ -3,7 +3,7 @@ using System.Globalization;
 
 SummingTask1(new int[] { 1, 5, 3, 8});
 SummingTask2(new int[] { 1, 5, 3, 8});
-SummingTask3(new int[] { 1, 2, 3, 4, 5, 6});
+SummingTask3(new int[] { 1, 2, 3, 4});
 SummingTask4(3, new int[] { 1, 5, 3, 8, 6, 2 });
 /*SummingTask5(3);
 SummingTask6(2);
