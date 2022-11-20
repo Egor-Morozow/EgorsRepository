@@ -1,0 +1,15 @@
+D:\C# learning\Flip1\Flip1\bin\Debug\net6.0\Flip1.exe
+D:\C# learning\Flip1\Flip1\bin\Debug\net6.0\Flip1.deps.json
+D:\C# learning\Flip1\Flip1\bin\Debug\net6.0\Flip1.runtimeconfig.json
+D:\C# learning\Flip1\Flip1\bin\Debug\net6.0\Flip1.dll
+D:\C# learning\Flip1\Flip1\bin\Debug\net6.0\ref\Flip1.dll
+D:\C# learning\Flip1\Flip1\bin\Debug\net6.0\Flip1.pdb
+D:\C# learning\Flip1\Flip1\obj\Debug\net6.0\Flip1.csproj.AssemblyReference.cache
+D:\C# learning\Flip1\Flip1\obj\Debug\net6.0\Flip1.GeneratedMSBuildEditorConfig.editorconfig
+D:\C# learning\Flip1\Flip1\obj\Debug\net6.0\Flip1.AssemblyInfoInputs.cache
+D:\C# learning\Flip1\Flip1\obj\Debug\net6.0\Flip1.AssemblyInfo.cs
+D:\C# learning\Flip1\Flip1\obj\Debug\net6.0\Flip1.csproj.CoreCompileInputs.cache
+D:\C# learning\Flip1\Flip1\obj\Debug\net6.0\Flip1.dll
+D:\C# learning\Flip1\Flip1\obj\Debug\net6.0\ref\Flip1.dll
+D:\C# learning\Flip1\Flip1\obj\Debug\net6.0\Flip1.pdb
+D:\C# learning\Flip1\Flip1\obj\Debug\net6.0\Flip1.genruntimeconfig.cache
